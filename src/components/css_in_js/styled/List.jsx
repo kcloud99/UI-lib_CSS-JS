@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Item from './Item.jsx';
+import Item from './Item';
 
 const List = ({items}) => {
   console.log('🌴🌏', items);
