@@ -7,6 +7,7 @@ import Home from './Home.jsx';
 import Bootstrap from './ui_libs/bootstrap/Index.jsx';
 import Material from './ui_libs/material/Index.jsx';
 import Semantic from './ui_libs/semantic/Index.jsx';
+import Styled from './css_in_js/styled/Index.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -29,25 +30,15 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <Fragment>
+    return <Fragment>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route
-            path="/bootstrap"
-            component={() => <Bootstrap items={this.state.items} />}
-          />
-          <Route
-            path="/material"
-            component={() => <Material items={this.state.items} />}
-          />
-          <Route
-            path="/semantic"
-            component={() => <Semantic items={this.state.items} />}
-          />
+          <Route path="/bootstrap" component={() => <Bootstrap items={this.state.items} />} />
+          <Route path="/material" component={() => <Material items={this.state.items} />} />
+          <Route path="/semantic" component={() => <Semantic items={this.state.items} />} />
+          <Route path="/styled" component={() => <Styled items={this.state.items} />} />
         </Switch>
-      </Fragment>
-    );
+      </Fragment>;
   }
 }
 

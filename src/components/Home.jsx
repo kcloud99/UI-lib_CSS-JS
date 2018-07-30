@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #68b4ac;
-  color: white;
+  color: #e0722d;
 `;
 
 const Header = styled.h1`
@@ -32,6 +32,7 @@ const Options = styled.div`
 
 const Links = styled.h4`
   font-size: 4rem;
+  color: white;
 `;
 
 const Home = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { WrappedItem, Cover, Name, Info, Btn } from './ItemStyles';
+import { WrappedItem, Cover, Name, Info, Btn } from './ItemStyles.jsx';
 
 
 const Item = (props) => {
