@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^1.4.2",
+    "@material-ui/icons": "^2.0.0",
     "axios": "^0.18.0",
     "babel-inline-import-loader": "^0.1.0",
     "babel-plugin-inline-import": "^3.0.0",

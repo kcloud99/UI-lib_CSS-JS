@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Fragment } from "react";
+import Item from "./Item.jsx";
 
 const Material = ({ items }) => {
+  console.log("🌴🌏", items);
   return (
-    <h1>This is Material</h1>
+    <Fragment>
+      {items.map(item => {
+        return <Item item={item} key={item.name} />;
+      })}
+    </Fragment>
   );
-}
+};
 
 export default Material;

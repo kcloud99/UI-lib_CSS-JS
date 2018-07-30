@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Fragment } from "react";
+import Item from "./Item.jsx";
 
 const Bootstrap = ({ items }) => {
-  return(
-    <h1>This is bootstrap</h1>
+  console.log("🌴🌏", items);
+  return (
+    <Fragment>
+      {items.map(item => {
+        return <Item item={item} key={item.name} />;
+      })}
+    </Fragment>
   );
-}
+};
 
 export default Bootstrap;
