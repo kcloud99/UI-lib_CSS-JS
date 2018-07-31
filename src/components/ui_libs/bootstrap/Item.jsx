@@ -1,14 +1,15 @@
 import React from "react";
-import { Label, Image, Panel, PageHeader } from 'react-bootstrap';
+import { Label, Image, Panel, PageHeader, Col } from 'react-bootstrap';
 
 const Item = (props) => {
   const item = props.item;
   const tags = item.request.Filters.tags || [];
   const pic = item.photo;
 
-  return <div>
+  return <Col xs={12} md={4}>
+      <div style={{width: '30vw', height: '20vh', padding: '5px', marginTop: '30vh'}}>
       <PageHeader>{item.name}</PageHeader>
-      <Image src={pic} />
+      <Image src={pic} responsive/>
       <Panel onClick={handleClick}>
         <Panel.Heading>
           <Panel.Title componentClass="h3">Tags</Panel.Title>
@@ -23,7 +24,8 @@ const Item = (props) => {
           })}
         </Panel.Body>
       </Panel>
-    </div>;
+      </div>
+    </Col>;
 }
 
 export default Item;
