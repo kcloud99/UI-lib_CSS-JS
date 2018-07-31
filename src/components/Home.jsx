@@ -35,21 +35,26 @@ const Links = styled.h4`
   color: white;
 `;
 
+const NoLinks = styled.h4`
+  font-size: 4rem;
+  color: white;
+  text-decoration: line-through;
+`;
+
 const Home = () => {
   return <Wrapper>
       <Header>UI Libraries vs CSS-in-JS modules</Header>
       <Options>
         <h2 style={{ fontSize: '6rem' }}>UI Libraries</h2>
-        <Link to="/bootstrap"><Links>Bootstrap</Links></Link>
         <Link to="/material"><Links>Material UI</Links></Link>
-        <Link to="/semantic"><Links>Semantic UI</Links></Link>
+        <Link to="/bootstrap"><Links>Bootstrap</Links></Link>
+        <Link to="/semantic"><NoLinks>Semantic UI</NoLinks></Link>
       </Options>
       <Options>
         <h2 style={{fontSize: '6rem'}}>CSS-in-JS Modules</h2>
         <Link to="/styled"><Links>Styled Components</Links></Link>
-        <Link to="/styled-jsx"><Links>Styled-JSX</Links></Link>
         <Link to="/emotion"><Links>Emotion</Links></Link>
-        <Link to="/import"><Links>Importing Stylesheets</Links></Link>
+        <Link to="/import"><NoLinks>Importing Stylesheets</NoLinks></Link>
       </Options>
     </Wrapper>;
 }

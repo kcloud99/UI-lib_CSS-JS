@@ -8,6 +8,7 @@ import Bootstrap from './ui_libs/bootstrap/Index.jsx';
 import Material from './ui_libs/material/Index.jsx';
 import Semantic from './ui_libs/semantic/Index.jsx';
 import Styled from './css_in_js/styled/Index.jsx';
+import Emotion from './css_in_js/emotion/Index.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends Component {
           <Route path="/material" component={() => <Material items={this.state.items} />} />
           <Route path="/semantic" component={() => <Semantic items={this.state.items} />} />
           <Route path="/styled" component={() => <Styled items={this.state.items} />} />
+          <Route path="/emotion" component={() => <Emotion items={this.state.items} />} />
         </Switch>
       </Fragment>;
   }
