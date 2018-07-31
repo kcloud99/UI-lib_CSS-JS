@@ -5,10 +5,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
 import Paper from "@material-ui/core/Paper";
-import TagFacesIcon from "@material-ui/icons/TagFaces";
+import Grid from "@material-ui/core/Grid";
 
 const styles = {
   card: {
@@ -47,7 +46,7 @@ class Item extends Component {
     const pic = item.photo;
     const { classes } = this.props;
 
-    return <div>
+    return <Grid item xs={4}>
         <Card className={classes.card}>
           <CardMedia
             className={classes.media}
@@ -71,7 +70,7 @@ class Item extends Component {
             </Paper>
           </CardContent>
         </Card>
-      </div>;
+      </Grid>;
   }
 }
 
